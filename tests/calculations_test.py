@@ -7,7 +7,7 @@ import os
 
 # Project Modules
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
-from calculations import area_of_circle, get_nth_fibonacci   # noqa: E402
+from calculations import area_of_circle, get_nth_fibonacci   # noqa: E404
 
 
 def test_area_of_circle_positive_radius():
@@ -57,6 +57,8 @@ def test_get_nth_fibonacci_one():
     # Assert
     assert result == 1
 
+
+#
 
 # def test_get_nth_fibonacci_ten():
 #     """Test with n=10."""
